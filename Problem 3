@@ -1,0 +1,21 @@
+function RecursiveOddDigits(n)
+{
+	if(Math.ceil(n/10)==1) return true;
+		
+	else
+    {
+
+        if(n.toString()[0]%2!==0)
+        {
+			
+			let m=n.toString().slice(1);
+            RecursiveOddDigits(m);
+			
+        }
+        else
+        {
+            return false;
+        }
+    }
+}
+RecursiveOddDigits(3);
