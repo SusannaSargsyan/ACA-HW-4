@@ -1,0 +1,16 @@
+let Arr=[1,2,3,4,5,6,7];
+let count=0;
+
+for(let i=0;i<Arr.length;i++)
+{
+	if(Arr[i+1]<Arr[i])
+  {
+		count++;
+		console.log(i+1);
+		break;
+  }
+	if(i===Arr.length-1 && count==0)
+  {
+	  console.log(-1);
+  }
+}
