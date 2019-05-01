@@ -1,0 +1,25 @@
+function MinimalPositiveNumber(Arr)
+{
+	
+	let min=Math.min(...Arr);
+
+	if(min>=0)
+    {
+		console.log(min);	
+        return min;
+    }
+	else if(Arr[1]==undefined)
+    {
+		console.log(-1);	
+		return -1;
+    }
+	else
+    {
+		Arr.splice(Arr.indexOf(min),1);
+		MinimalPositiveNumber(Arr);
+         
+     }
+
+   
+}
+MinimalPositiveNumber([56, -9, 87, -23, 0, -105, 55, 1]);
