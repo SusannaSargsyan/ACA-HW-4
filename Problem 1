@@ -1,0 +1,19 @@
+function LargerElementsArray (Arr,n) 
+{
+    let finalArr = [];
+    for(let i=0;i<Arr.length;i++)
+    {
+        if(Arr[i]>n)
+        {
+        	finalArr.push(Arr[i]);
+        }
+    }
+
+    if(finalArr.length!=0)
+    {
+        console.log(finalArr);
+    }
+    else console.log('Such numbers does not exist');
+}
+
+LargerElementsArray ([1,2,3,4,5,6,7],3) ;
