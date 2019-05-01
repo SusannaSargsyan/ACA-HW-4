@@ -1,0 +1,37 @@
+function EvenDigitNumbers(n1,n2)
+{	
+	let FinStr='';
+	for(let i=n1;i<=n2;i++)
+    {
+		let count=0;
+		for(let j=0;j<i.toString().length;j++)
+        {
+			if(i.toString()[j]%2==0)
+            {
+				count++;
+            }
+			else
+            {
+				continue;
+				continue;
+
+            }
+			if(count==i.toString().length)
+            {
+				FinStr+=` ${i}, `;
+            }
+        }
+    }
+
+	if(FinStr==="")
+    {
+		console.log("Such numbers does not exist.");
+    }
+    else 
+    {
+       
+        console.log(FinStr);
+    }
+
+}
+EvenDigitNumbers(19,42);
